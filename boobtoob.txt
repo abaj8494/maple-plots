@@ -1,0 +1,5 @@
+c1:=[cos(x)-2*cos(0.4*y), sin(x)-2*sin(0.4*y), y]:
+c2:=[cos(x)+2*cos(0.4*y), sin(x)+2*sin(0.4*y), y]:
+c3:=[cos(x)+2*sin(0.4*y), sin(x)-2*cos(0.4*y), y]:
+c4:=[cos(x)-2*sin(0.4*y), sin(x)+2*cos(0.4*y), y]:
+plot3d({c1,c2,c3,c4}, x=0..2*Pi, y=0..10, grid=[25,15], color = sin(x));
